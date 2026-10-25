@@ -98,10 +98,19 @@
   font-size: 0.85em;
 }
 a {
-  text-decoration: none;   /* no underline */ /* color: #1a4a80;           darker blue */
+  text-decoration: none; font-weight: 600;   /* no underline */ /* color: #1a4a80;           darker blue */
 }
 a:hover {
   text-decoration: underline;
+}
+/*a:not(.icons a)::before { */
+.pub .links a::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f35d";          /* external-link arrow */
+  font-size: 0.75em;
+  margin-right: 4px;
+  color: #888;
 }
 </style>
 
@@ -111,11 +120,11 @@ a:hover {
   <img src="port.png" alt="Samuel Lüthi">
   <div>
     <h1>Samuel Lüthi</h1>
-    <p>Researcher/ Economist at <a href="https://www.skbf-csre.ch/en/" title="SCCRE" target="_blank">Swiss Coordination Centre for Research in Education</a></p>
+    <p>I am a postdoctoral researcher at the <a href="https://www.skbf-csre.ch/en/" title="SCCRE" target="_blank">Swiss Coordination Centre for Research in Education</a>.</p>
   </div>
 </div>
 
-<p>Research focus: education economics, labor, vocational education &amp; training (VET), firm-based learning</p>
+<p>My research focuses on economics of education, labor economics, vocational education &amp; training (VET), firm-based learning.</p>
 
 <!--- Projects ---------------------------------------------------------- -->
 <h2>Current projects</h2>
@@ -129,8 +138,9 @@ a:hover {
     <p>Practical skills are believed to affect labor market success, yet evidence is scarce because they are occupation-specific and difficult to measure. We use high-stakes expert evaluations of apprentices' performance in standardized practical examinations across more than 170 occupations, held under authentic workplace conditions and linked to administrative records, to separate practical skills from general and vocational knowledge. Practical skills form a distinct dimension of human capital, weakly correlated with conventional achievement measures. They are associated with higher first-year earnings, lower NEET risk, greater retention by training firms, and tertiary entry. Out-of-sample, they substantially improve prediction beyond achievement and background characteristics.
 </p>
     <p class="links">
-      <a href="https://www.rfberlin.com/network-paper/the-value-of-practical-skills/" target="_blank">Working paper at RFBerlin, 206/26</a>
-      <a href="https://doi.org/10.65864/yl4v8bxvtf" target="_blank">Working paper at CESifo, 12881</a>
+      <a href="https://www.rfberlin.com/network-paper/the-value-of-practical-skills/" target="_blank">Working paper at RFBerlin, 206/26</a><br>
+      <a href="https://doi.org/10.65864/yl4v8bxvtf" target="_blank">Working paper at CESifo, 12881</a><br>
+       <a href="https://www.skbf-csre.ch/fileadmin/files/bilder/news/Neue_Zu__rcher_Zeitung_20260811_Seite_9.pdf" target="_blank">News article in NZZ</a>
     </p>
   </div>
 </details>
@@ -183,7 +193,8 @@ a:hover {
     <p>This study examines the effects of firm-based (or dual) vocational education and training (VET) on labour market and educational outcomes. Using Swiss administrative data, I compare graduates of dual and school-based VET, all of whom have studied the same curriculum and received the same diploma. In addition to municipality fixed effects models, I use distance to the nearest full-time VET school as an instrumental variable to identify the causal effect. The results show that dual VET is far more effective for securing first employment, especially for men and for occupations with loose labour market conditions. For causal channels, dual VET not only provides the possibility of remaining in the training firm upon graduation but is also more effective among those who do not remain. However, as school-based VET graduates are more likely to progress to higher education, the overall results show that each form of VET has a comparative advantage.</p>
     <p class="links">
       <a href="https://doi.org/10.1016/j.econedurev.2025.102719" target="_blank">Available at Economics of Education Review</a><br>
-      <a href="https://transfer.vet/schulische-und-duale-berufsbildung-vorteile-auf-beiden-seiten/" target="_blank">Brief description in "Transfer.vet" (German)</a>
+      <a href="https://www.educationeconomics.uzh.ch/dam/jcr:40c817a8-15dc-4c2c-95e5-e731889167c7/Newsletterf%C3%BCrdiePraxis%201_2026.pdf" target="_blank">Swiss Leading House VPET-ECON Newsletter für die Praxis</a><br>
+      <a href="https://transfer.vet/schulische-und-duale-berufsbildung-vorteile-auf-beiden-seiten/" target="_blank">Beitrag in "Transfer.vet"</a>
 
 
     </p>
@@ -212,7 +223,7 @@ a:hover {
     <p>Competitiveness is increasingly discussed in behavioural economics as a personality trait that potentially relates to various labour market outcomes, such as career choices or compensation. This paper studies the association between individual competitiveness and premature employment and training contract termination from apprenticeships. We combine an incentivized measure of students' competitiveness, elicited almost two years before the start of an apprenticeship, with administrative data on premature contract terminations. We find that not only the propensity towards competition depends on gender, but also that competitiveness is related differently to premature contract termination for men and women. For competitive men, we observe no correlation or, depending on the measure of competitiveness, that they are more successful in their apprenticeships. Competitive women, in contrast, are more likely to terminate their contract prematurely compared to non-competitive women, mostly due to a higher risk of conflicts with their employers.</p>
     <p class="links">
       <a href="https://doi.org/10.1016/j.labeco.2023.102457" target="_blank">Open access at Labour Economics</a><br>
-      <a href="https://oekonomenstimme.kof.ethz.ch/articles/1898" target="_blank">Article in Ökonomenstimme (in German)</a>
+      <a href="https://oekonomenstimme.kof.ethz.ch/articles/1898" target="_blank">Artikel in Ökonomenstimme</a>
     </p>
   </div>
 </details>
@@ -225,7 +236,8 @@ a:hover {
   <div class="abstract">
     <p>Competitiveness is increasingly discussed in behavioural economics as a personality trait that potentially relates to various labour market outcomes, such as career choices or compensation. This paper studies the association between individual competitiveness and premature employment and training contract termination from apprenticeships. We combine an incentivized measure of students' competitiveness, elicited almost two years before the start of an apprenticeship, with administrative data on premature contract terminations. We find that not only the propensity towards competition depends on gender, but also that competitiveness is related differently to premature contract termination for men and women. For competitive men, we observe no correlation or, depending on the measure of competitiveness, that they are more successful in their apprenticeships. Competitive women, in contrast, are more likely to terminate their contract prematurely compared to non-competitive women, mostly due to a higher risk of conflicts with their employers.</p>
     <p class="links">
-      <a href="https://doi.org/10.1186/s41937-019-0047-1" target="_blank">Open access at Swiss Journal of Economics and Statistics</a>
+      <a href="https://doi.org/10.1186/s41937-019-0047-1" target="_blank">Open access at Swiss Journal of Economics and Statistics</a><br>
+      <a href="https://www.educationeconomics.uzh.ch/dam/jcr:d2fcec94-849a-4857-a92b-113cbbb0e261/052020_Covid_und_Lehrstellen.pdf" target="_blank">Leading House Kurzbeitrag, 8.5.2020: Der Einfluss der COVID-19 Krise auf den Schweizer Lehrstellenmarkt</a>
     </p>
   </div>
 </details>
@@ -263,10 +275,8 @@ a:hover {
   </summary>
   <div class="abstract">
     <p class="links">
-       <ul>
-      <li><a href="https://transfer.vet/licht-und-schatten-in-der-berufsbildung/" target="_blank">Licht und Schatten in der Berufsbildung: Interview zum Bildungsbericht Schweiz 2026, Transfer.vet</a></li>
-      <li><a href="https://issuu.com/ztonline/docs/aargauer_wirtschaft_august_2026/7" target="_blank">Artikel zur Berufsbildung im Bildungsbericht 2026 in der Aargauer Wirtschaft</a></li>
-      </ul>      
+      <a href="https://transfer.vet/licht-und-schatten-in-der-berufsbildung/" target="_blank">Interview zum Bildungsbericht Schweiz 2026, Transfer.vet</a><br>
+      <a href="https://issuu.com/ztonline/docs/aargauer_wirtschaft_august_2026/7" target="_blank">Artikel zur Berufsbildung im Bildungsbericht 2026 in der Aargauer Wirtschaft</a>
     </p>
   </div>
 </details>
