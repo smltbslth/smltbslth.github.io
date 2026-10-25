@@ -15,6 +15,9 @@
       line-height: 1.6;
     }
     h1 { margin-bottom: 0.2em; }
+    h2 { margin-top: 1em;
+         margin-bottom: 0.2em; }
+
     p  { color: #555; margin-top: 0; }
 
     .pub {
@@ -37,13 +40,32 @@
   list-style: none;
 }
 .pub summary::-webkit-details-marker { display: none; }
+.pub summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-left: 1.2em;      /* space for the arrow */
+}
 .pub summary::before {
-  content: "▸ ";
+  content: "▹";
+  position: absolute;
+  left: 0;
   color: #888;
 }
-.pub[open] summary::before { content: "▾ "; }
-.pub .title { font-weight: 600; color: #222; }
-.pub .meta  { color: #666; font-size: 0.95em; }
+.pub[open] summary::before { content: "▿"; }
+
+.pub .title {
+  display: block;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0px;
+}
+.pub .meta {
+  display: block;
+  color: #666;
+  font-size: 0.95em;
+  margin-top: 0px;
+}
 .pub .abstract {
   margin: 10px 0 0 18px;
   color: #444;
@@ -95,15 +117,17 @@ a:hover {
 
 <p>Research focus: education economics, labor, vocational education &amp; training (VET), firm-based learning</p>
 
+<!--- Projects ---------------------------------------------------------- -->
 <h2>Current projects</h2>
 
 <details class="pub">
   <summary>
-    <span class="title">The Value of Practical Skills</span><br>
+    <span class="title">The Value of Practical Skills</span>
     <span class="meta">Daniel Goller, Samuel Lüthi, &amp; Stefan C. Wolter. (2026). <em>Working Paper</em>.</span>
   </summary>
   <div class="abstract">
-    <p>Practical skills are widely believed to be a key determinant of labor market success, yet credible empirical evidence remains scarce, because these skills are occupation-specific, acquired primarily through workplace experience, and notoriously difficult to measure. We address these challenges using an exceptional dataset covering over 170 occupations. Our measure of practical skills is based on high-stakes expert evaluations of apprentices’ performance in occupation-specific standardized practical examinations, conducted under authentic workplace conditions and lasting from several hours to several weeks. Combined with rich administrative data, this allows us to separate practical skills from general and vocational knowledge. We show that practical skills form a distinct dimension of human capital, only weakly correlated with traditional achievement measures. Practical skills are the strongest predictor of early labor market success, consistently associated with higher first-year earnings, lower NEET risk, greater retention by the training firm, and a higher likelihood of entering tertiary education. These relationships are robust across occupational task groups and by gender. Out-of-sample analyses show that practical skills substantially improve predictions beyond conventional educational achievement and background characteristics.</p>
+    <p>Practical skills are believed to affect labor market success, yet evidence is scarce because they are occupation-specific and difficult to measure. We use high-stakes expert evaluations of apprentices' performance in standardized practical examinations across more than 170 occupations, held under authentic workplace conditions and linked to administrative records, to separate practical skills from general and vocational knowledge. Practical skills form a distinct dimension of human capital, weakly correlated with conventional achievement measures. They are associated with higher first-year earnings, lower NEET risk, greater retention by training firms, and tertiary entry. Out-of-sample, they substantially improve prediction beyond achievement and background characteristics.
+</p>
     <p class="links">
       <a href="https://www.rfberlin.com/network-paper/the-value-of-practical-skills/" target="_blank">Working paper at RFBerlin, 206/26</a>
       <a href="https://doi.org/10.65864/yl4v8bxvtf" target="_blank">Working paper at CESifo, 12881</a>
@@ -113,17 +137,17 @@ a:hover {
 
 <details class="pub">
   <summary>
-    <span class="title">Revealed Ambition</span><br>
+    <span class="title">Revealed Ambition</span>
     <span class="meta">Samuel Lüthi &amp; Stefan C. Wolter. (2026). <em>Unpublished Project</em>.</span>
   </summary>
   <div class="abstract">
-    <p>We analyse howambitious upper secondary qualification choices relate to educational and labour market outcomes. Swiss upper secondary education is highly specialized: two-thirds of school-leavers choose one of the more than 200 occupations in the vocational education and training (VET) system, and the remainder choose among several types of general education. This specialization allows us to quantify the ambition of each choice, which we call revealed ambition, as the distance between a student’s own PISA score and the median PISA score of the students entering the same qualification. Using PISA data linked to administrative records, we find that, conditional on ability, revealed ambition correlates with socioeconomic status, lower secondary class size, and urbanity, and strongly with the occupational status that students expect to hold at 30. This last correlation suggests that the choice reflects long-term expectations. We then show that this initial career decision involves a trade-off: ambitious choices are associated with a lower probability of completing upper secondary education on time, particularly among VET students of low ability, but with a higher probability of graduating from tertiary education and, among VET students who enter the labour market, with higher early-career earnings.</p>
+    <p>We analyse how ambitious upper secondary qualification choices relate to educational and labour market outcomes. Swiss upper secondary education is highly specialized: two-thirds of school-leavers choose one of the more than 200 occupations in the vocational education and training (VET) system, and the remainder choose among several types of general education. This specialization allows us to quantify the ambition of each choice, which we call revealed ambition, as the distance between a student's own PISA score and the median PISA score of the students entering the same qualification. Using PISA data linked to administrative records, we find that, conditional on ability, revealed ambition correlates with socioeconomic status, lower secondary class size, and urbanity, and strongly with the occupational status that students expect to hold at 30. This last correlation suggests that the choice reflects long-term expectations. We then show that this initial career decision involves a trade-off: ambitious choices are associated with a lower probability of completing upper secondary education on time, particularly among VET students of low ability, but with a higher probability of graduating from tertiary education and, among VET students who enter the labour market, with higher early-career earnings.</p>
   </div>
 </details>
 
 <details class="pub">
   <summary>
-    <span class="title">Competitive Peers: The Way to Higher Paying Jobs?</span><br>
+    <span class="title">Competitive Peers: The Way to Higher Paying Jobs?</span>
     <span class="meta">Claudio Schilter, Samuel Lüthi, &amp; Stefan C. Wolter. (2025). <em>Working Paper</em>.</span>
   </summary>
   <div class="abstract">
@@ -136,35 +160,39 @@ a:hover {
 
 <details class="pub">
   <summary>
-    <span class="title">Opening Doors for Immigrants: The Importance of Occupational and Workplace-Based Cultural Skills for Successful Labor Market Entry</span><br>
+    <span class="title">Opening Doors for Immigrants: The Importance of Occupational and Workplace-Based Cultural Skills for Successful Labor Market Entry</span>
     <span class="meta">Chiara Zisler, Samuel Lüthi, Damiano Pregaldini, &amp; Uschi Backes-Gellner. (2025). <em>Working Paper</em>.</span>
   </summary>
   <div class="abstract">
-    <p>Young immigrants, who often lack country-specific human capital, face greater challenges in the transition from education to the labor market (e.g., lower employment probabilities, longer unemployment spells) than native adolescents. This paper analyzes the effect of workplace-based cultural skills—skills that can only be acquired at work—on a successful transition. We exploit a natural experiment in which students acquire occupational skills in one of two types of vocational education and training (VET): either dual programs with training in firms complemented by vocational schooling or purely school-based programs. While welldefined curricula ensure identical occupational skills in both programs, the training of workplace-based cultural skills differs systematically and is concentrated in dual programs. As young immigrants lack essential cultural skills, we expect that additional workplace-based cultural skills training in dual VET improves immigrants’ transition into the labor market and thus their longer-term employment prospects. Using administrative data, we compare the way both programs affect the labor market entry of immigrant groups with pronounced cultural disadvantages. To estimate causal effects on employment outcomes, we exploit variation in travel times to vocational schools that offer school-based VET programs. Results show that completing dual VET, as opposed to school-based VET, leads to significantly reduced unemployment probabilities for young immigrants, suggesting that workplace-based cultural skills are crucial for young immigrants’ transitions from education into the labor market.</p>
+    <p>Young immigrants, who often lack country-specific human capital, face greater challenges in the transition from education to the labor market (e.g., lower employment probabilities, longer unemployment spells) than native adolescents. This paper analyzes the effect of workplace-based cultural skills—skills that can only be acquired at work—on a successful transition. We exploit a natural experiment in which students acquire occupational skills in one of two types of vocational education and training (VET): either dual programs with training in firms complemented by vocational schooling or purely school-based programs. While welldefined curricula ensure identical occupational skills in both programs, the training of workplace-based cultural skills differs systematically and is concentrated in dual programs. As young immigrants lack essential cultural skills, we expect that additional workplace-based cultural skills training in dual VET improves immigrants' transition into the labor market and thus their longer-term employment prospects. Using administrative data, we compare the way both programs affect the labor market entry of immigrant groups with pronounced cultural disadvantages. To estimate causal effects on employment outcomes, we exploit variation in travel times to vocational schools that offer school-based VET programs. Results show that completing dual VET, as opposed to school-based VET, leads to significantly reduced unemployment probabilities for young immigrants, suggesting that workplace-based cultural skills are crucial for young immigrants’ transitions from education into the labor market.</p>
     <p class="links">
       <a href="https://ideas.repec.org/p/iso/educat/0204.html" target="_blank">Working paper at LH VPET, 204</a>
     </p>
   </div>
 </details>
 
+<!--- Studies ---------------------------------------------------------- -->
 <h2>Published studies and reports</h2>
 
 <details class="pub">
   <summary>
-    <span class="title">Classroom versus workbench: The impact of firm-based learning on labour market and educational outcomes</span><br>
+    <span class="title">Classroom versus workbench: The impact of firm-based learning on labour market and educational outcomes</span>
     <span class="meta">Samuel Lüthi. (2025). <em>Economics of Education Review</em>.</span>
   </summary>
   <div class="abstract">
     <p>This study examines the effects of firm-based (or dual) vocational education and training (VET) on labour market and educational outcomes. Using Swiss administrative data, I compare graduates of dual and school-based VET, all of whom have studied the same curriculum and received the same diploma. In addition to municipality fixed effects models, I use distance to the nearest full-time VET school as an instrumental variable to identify the causal effect. The results show that dual VET is far more effective for securing first employment, especially for men and for occupations with loose labour market conditions. For causal channels, dual VET not only provides the possibility of remaining in the training firm upon graduation but is also more effective among those who do not remain. However, as school-based VET graduates are more likely to progress to higher education, the overall results show that each form of VET has a comparative advantage.</p>
     <p class="links">
-      <a href="https://doi.org/10.1016/j.econedurev.2025.102719" target="_blank">Available at Economics of Education Review</a>
+      <a href="https://doi.org/10.1016/j.econedurev.2025.102719" target="_blank">Available at Economics of Education Review</a><br>
+      <a href="https://transfer.vet/schulische-und-duale-berufsbildung-vorteile-auf-beiden-seiten/" target="_blank">Brief description in "Transfer.vet" (German)</a>
+
+
     </p>
   </div>
 </details>
 
 <details class="pub">
   <summary>
-    <span class="title">The response of public education spending to changes in student cohort sizes.</span><br>
+    <span class="title">The response of public education spending to changes in student cohort sizes.</span>
     <span class="meta">Samuel Lüthi &amp; Maria Zumbuehl. (2025). <em>Education Economics</em>.</span>
   </summary>
   <div class="abstract">
@@ -177,24 +205,25 @@ a:hover {
 
 <details class="pub">
   <summary>
-    <span class="title">Is being competitive always an advantage? Competitiveness, gender, and labour market success</span><br>
+    <span class="title">Is being competitive always an advantage? Competitiveness, gender, and labour market success</span>
     <span class="meta">Samuel Lüthi &amp; Stefan C. Wolter. (2023). <em>Labour Economics</em>.</span>
   </summary>
   <div class="abstract">
-    <p>Competitiveness is increasingly discussed in behavioural economics as a personality trait that potentially relates to various labour market outcomes, such as career choices or compensation. This paper studies the association between individual competitiveness and premature employment and training contract termination from apprenticeships. We combine an incentivized measure of students’ competitiveness, elicited almost two years before the start of an apprenticeship, with administrative data on premature contract terminations. We find that not only the propensity towards competition depends on gender, but also that competitiveness is related differently to premature contract termination for men and women. For competitive men, we observe no correlation or, depending on the measure of competitiveness, that they are more successful in their apprenticeships. Competitive women, in contrast, are more likely to terminate their contract prematurely compared to non-competitive women, mostly due to a higher risk of conflicts with their employers.</p>
+    <p>Competitiveness is increasingly discussed in behavioural economics as a personality trait that potentially relates to various labour market outcomes, such as career choices or compensation. This paper studies the association between individual competitiveness and premature employment and training contract termination from apprenticeships. We combine an incentivized measure of students' competitiveness, elicited almost two years before the start of an apprenticeship, with administrative data on premature contract terminations. We find that not only the propensity towards competition depends on gender, but also that competitiveness is related differently to premature contract termination for men and women. For competitive men, we observe no correlation or, depending on the measure of competitiveness, that they are more successful in their apprenticeships. Competitive women, in contrast, are more likely to terminate their contract prematurely compared to non-competitive women, mostly due to a higher risk of conflicts with their employers.</p>
     <p class="links">
-      <a href="https://doi.org/10.1016/j.labeco.2023.102457" target="_blank">Open access at Labour Economics</a>
+      <a href="https://doi.org/10.1016/j.labeco.2023.102457" target="_blank">Open access at Labour Economics</a><br>
+      <a href="https://oekonomenstimme.kof.ethz.ch/articles/1898" target="_blank">Article in Ökonomenstimme (in German)</a>
     </p>
   </div>
 </details>
 
 <details class="pub">
   <summary>
-    <span class="title">Are apprenticeships business cycle proof?</span><br>
+    <span class="title">Are apprenticeships business cycle proof?</span>
     <span class="meta">Samuel Lüthi &amp; Stefan C. Wolter. (2020). <em>Swiss Journal of Economics and Statistics</em>.</span>
   </summary>
   <div class="abstract">
-    <p>Competitiveness is increasingly discussed in behavioural economics as a personality trait that potentially relates to various labour market outcomes, such as career choices or compensation. This paper studies the association between individual competitiveness and premature employment and training contract termination from apprenticeships. We combine an incentivized measure of students’ competitiveness, elicited almost two years before the start of an apprenticeship, with administrative data on premature contract terminations. We find that not only the propensity towards competition depends on gender, but also that competitiveness is related differently to premature contract termination for men and women. For competitive men, we observe no correlation or, depending on the measure of competitiveness, that they are more successful in their apprenticeships. Competitive women, in contrast, are more likely to terminate their contract prematurely compared to non-competitive women, mostly due to a higher risk of conflicts with their employers.</p>
+    <p>Competitiveness is increasingly discussed in behavioural economics as a personality trait that potentially relates to various labour market outcomes, such as career choices or compensation. This paper studies the association between individual competitiveness and premature employment and training contract termination from apprenticeships. We combine an incentivized measure of students' competitiveness, elicited almost two years before the start of an apprenticeship, with administrative data on premature contract terminations. We find that not only the propensity towards competition depends on gender, but also that competitiveness is related differently to premature contract termination for men and women. For competitive men, we observe no correlation or, depending on the measure of competitiveness, that they are more successful in their apprenticeships. Competitive women, in contrast, are more likely to terminate their contract prematurely compared to non-competitive women, mostly due to a higher risk of conflicts with their employers.</p>
     <p class="links">
       <a href="https://doi.org/10.1186/s41937-019-0047-1" target="_blank">Open access at Swiss Journal of Economics and Statistics</a>
     </p>
@@ -203,7 +232,7 @@ a:hover {
 
 <details class="pub">
   <summary>
-    <span class="title">Effizienz im Schweizer Bildungssystem: Expertenbericht</span><br>
+    <span class="title">Effizienz im Schweizer Bildungssystem: Expertenbericht</span>
     <span class="meta">Stefan C. Wolter, Samuel Lüthi, &amp; Maria Zumbühl. (2020). <em>Bern: Universität Bern</em>.</span>
   </summary>
   <div class="abstract">
@@ -215,7 +244,7 @@ a:hover {
 
 <details class="pub">
   <summary>
-    <span class="title"> Unlocking the Potential of Migrants in Germany</span><br>
+    <span class="title"> Unlocking the Potential of Migrants in Germany</span>
     <span class="meta">Benedicte Bergseng, Eva Degler, &amp; Samuel Lüthi. (2019). <em>Paris: OECD</em>.</span>
   </summary>
   <div class="abstract">
@@ -225,6 +254,24 @@ a:hover {
   </div>
 </details>
 
+<!--- Swiss Education Reports ---------------------------------------------------------- -->
+<h2>Swiss Education Report</h2>
+
+<details class="pub">
+  <summary>
+    <span class="title">Co-author of the <a href="https://www.skbf-csre.ch/en/education-report/education-report/" target="_blank">Swiss Education Report</a> 2023 and 2026</span>
+  </summary>
+  <div class="abstract">
+    <p class="links">
+       <ul>
+      <li><a href="https://transfer.vet/licht-und-schatten-in-der-berufsbildung/" target="_blank">Licht und Schatten in der Berufsbildung: Interview zum Bildungsbericht Schweiz 2026, Transfer.vet</a></li>
+      <li><a href="https://issuu.com/ztonline/docs/aargauer_wirtschaft_august_2026/7" target="_blank">Artikel zur Berufsbildung im Bildungsbericht 2026 in der Aargauer Wirtschaft</a></li>
+      </ul>      
+    </p>
+  </div>
+</details>
+
+<!--- Contact ---------------------------------------------------------- -->
 <h2>Contact</h2>
 
 
